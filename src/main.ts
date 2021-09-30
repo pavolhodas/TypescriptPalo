@@ -1,2 +1,2 @@
-const message: string = 'Hello, Appslab2020!';
+const message: string = 'a, Appslab2020!';
 console.log(message);
