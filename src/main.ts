@@ -1,11 +1,12 @@
-let a:number[]=new Array(1,2,5,7,9)
-let result:number[]=new Array();
+let a:string = "papap";
 
-function multiplyByLength(b : number[]){
-    for(let i=0;i<b.length;i++){
-        result.push(b[i]*b.length)
+function checkPalindrome(b : string){
+    const reverseString = b.split('').reverse().join('');
+
+    if(b == reverseString){
+        console.log("It is palindrome");
     }
-    console.log(result);
+    else
+    console.log("It isn't palindrome")
 }
-
-multiplyByLength(a);
+checkPalindrome(a);
