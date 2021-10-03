@@ -1,4 +1,7 @@
-function totalDistance(heightOfStep : number, lenghtOfStep : number, towerHeight : number){
-    console.log((towerHeight / heightOfStep) *(lenghtOfStep + heightOfStep ));
+function totalDistance(a : number, b : number, c : number){
+    if(c * b < a)
+        {
+            console.log("true");
+        }
 }
-totalDistance(0.3, 0.2, 25.0);
+totalDistance(11, 5, 2);
