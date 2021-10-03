@@ -1,15 +1,11 @@
-function IsEqual(a : number, b : number, c : number){
-    if(a == b && c == b)
+function IsTriangle(a : number, b : number, c : number){
+    if(a + b > c && c + b > a && a + c > b)
         {
-            console.log(3);
-        }
-        else if(a == b || b == c || c == a)
-        {
-            console.log(2);
+            console.log("true");
         }
         else
         {
-            console.log(0);
+            console.log("false");
         }
 }
-IsEqual(0.3, 0.2, 0.2);
+IsTriangle(0.3, 0.2, 0.2);
