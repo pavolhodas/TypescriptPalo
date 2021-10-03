@@ -1,12 +1,12 @@
-let a:string = "papap";
-
-function checkPalindrome(b : string){
-    const reverseString = b.split('').reverse().join('');
-
-    if(b == reverseString){
-        console.log("It is palindrome");
+function RockPaperScissors(a:string, b : string){
+    if (a == "rock" && b == "paper" || a == "scissors" && b=="rock" || a=="paper" && b=="scissors") {
+        console.log("player 2 wins")
     }
-    else
-    console.log("It isn't palindrome")
+    else if(a== "scissors" && b=="paper" || a=="rock" && b=="scissors" || a=="paper" && b=="rock"){
+        console.log("player 1 wins")
+    }
+    else{
+        console.log("TIE");
+    }
 }
-checkPalindrome(a);
+RockPaperScissors("rock", "paper");
