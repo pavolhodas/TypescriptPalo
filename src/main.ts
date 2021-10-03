@@ -1,8 +1,23 @@
-let a:number[]=new Array(70,-60,50);
+let a:number[]=new Array(5, 9, 45, 6, 2, 7, 34, 8, 6, 90, 5, 243);
+let oddSum = 0;
+let evenSum = 0;
 
-function RockPaperScissors(a:number[]){
-    a.sort();
+function warOddEven(a:number[]){
+    for(let i=0;i<a.length;i++){
 
-    console.log( Math.abs(a[a.length-1])-Math.abs(a[0]));
+        if(a[i]%2 != 0){
+            oddSum += a[i]
+        }
+        else{
+            evenSum += a[i]
+        }
+    }
+    if(evenSum>oddSum)
+    {
+        console.log(evenSum-oddSum);
+    }
+    else{
+        console.log(oddSum-evenSum);
+    }
 }
-RockPaperScissors(a);
+warOddEven(a);
