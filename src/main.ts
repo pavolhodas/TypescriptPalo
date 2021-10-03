@@ -1,7 +1,11 @@
-function totalDistance(a : number, b : number, c : number){
-    if(c * b < a)
-        {
-            console.log("true");
-        }
+let a:number[]=new Array(1,2,5,7,9)
+let result:number[]=new Array();
+
+function multiplyByLength(b : number[]){
+    for(let i=0;i<b.length;i++){
+        result.push(b[i]*b.length)
+    }
+    console.log(result);
 }
-totalDistance(11, 5, 2);
+
+multiplyByLength(a);
