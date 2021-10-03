@@ -1,9 +1,8 @@
 function checkEnding(m: string, n: string) {
-    return m.endsWith(n);
-  
+    if(m.charAt(0)==n.charAt(0) || m.charAt(1)==n.charAt(1)){
+        return true;
+    }
+    else
+    return false;
   }
-  console.log(checkEnding("abv", "bv"));
-
-  interface String {    
-    endsWith(searchString: string, endPosition?: number): boolean;
-};
+  console.log(checkEnding("A8", "B8"));
